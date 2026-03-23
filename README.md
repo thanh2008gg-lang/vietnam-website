@@ -90,7 +90,7 @@ footer {
 
 <!-- 🎵 NHẠC -->
 <audio id="bgMusic" loop>
-    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    <source src=" https://bcdcnt.net/bai-hat/tien-quan-ca-9191.html" type="audio/mpeg">
 </audio>
 
 <!-- 🔘 Nút bật/tắt -->
