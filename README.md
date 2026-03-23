@@ -162,4 +162,139 @@ function toggleMusic() {
 </script>
 
 </body>
+</<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Việt Nam tuyệt đẹp</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Banner */
+.banner {
+    height: 100vh;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/2/21/Ha_Long_Bay.jpg') no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.banner h1 {
+    font-size: 50px;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+}
+
+/* Section ảnh lớn */
+.section {
+    position: relative;
+    height: 400px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section h2 {
+    background: rgba(0,0,0,0.5);
+    padding: 15px;
+}
+
+/* Các ảnh */
+.halong {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/2/21/Ha_Long_Bay.jpg') no-repeat center/cover;
+}
+.hoian {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/e/e4/Hoi_An.jpg') no-repeat center/cover;
+}
+.dalat {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/Da_Lat.jpg') no-repeat center/cover;
+}
+.pho {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/1/1c/Pho.jpg') no-repeat center/cover;
+}
+.banhmi {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/4/45/Banh_mi.jpg') no-repeat center/cover;
+}
+
+/* Nút nhạc */
+.music-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Nhạc -->
+<audio id="bgMusic" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+</audio>
+
+<button class="music-btn" onclick="toggleMusic()">🎵</button>
+
+<!-- Banner -->
+<div class="banner">
+    <h1>🇻🇳 Việt Nam tuyệt đẹp</h1>
+</div>
+
+<!-- Địa điểm -->
+<div class="section halong">
+    <h2>Vịnh Hạ Long - Kỳ quan thế giới</h2>
+</div>
+
+<div class="section hoian">
+    <h2>Hội An - Phố cổ lung linh</h2>
+</div>
+
+<div class="section dalat">
+    <h2>Đà Lạt - Thành phố ngàn hoa</h2>
+</div>
+
+<!-- Ẩm thực -->
+<div class="section pho">
+    <h2>Phở - Tinh hoa ẩm thực</h2>
+</div>
+
+<div class="section banhmi">
+    <h2>Bánh mì - Món ăn đường phố</h2>
+</div>
+
+<footer>
+    <p>© 2026 - Việt Nam</p>
+</footer>
+
+<script>
+function toggleMusic() {
+    var music = document.getElementById("bgMusic");
+    if (music.paused) {
+        music.play();
+    } else {
+        music.pause();
+    }
+}
+</script>
+
+</body>
 </html>
