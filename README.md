@@ -9,7 +9,6 @@
 body {
     margin: 0;
     font-family: Arial;
-    background: linear-gradient(to bottom, #f0f8ff, #ffffff);
 }
 
 /* Header */
@@ -18,9 +17,6 @@ header {
     color: white;
     text-align: center;
     padding: 100px 20px;
-}
-header h1 {
-    font-size: 40px;
 }
 
 /* Menu */
@@ -66,6 +62,19 @@ nav a:hover {
     object-fit: cover;
 }
 
+/* Button */
+.music-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
 /* Footer */
 footer {
     background: #222;
@@ -79,10 +88,13 @@ footer {
 
 <body>
 
-<!-- 🎵 NHẠC NỀN -->
-<audio autoplay loop>
+<!-- 🎵 NHẠC -->
+<audio id="bgMusic" loop>
     <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
 </audio>
+
+<!-- 🔘 Nút bật/tắt -->
+<button class="music-btn" onclick="toggleMusic()">🎵 Nhạc</button>
 
 <header>
     <h1>🇻🇳 Khám phá Việt Nam</h1>
@@ -137,6 +149,17 @@ footer {
 <footer>
     <p>© 2026 - Website Việt Nam</p>
 </footer>
+
+<script>
+function toggleMusic() {
+    var music = document.getElementById("bgMusic");
+    if (music.paused) {
+        music.play();
+    } else {
+        music.pause();
+    }
+}
+</script>
 
 </body>
 </html>
